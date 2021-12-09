@@ -1,0 +1,56 @@
+
+footer{
+    background-color: #fcb18d;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.contactMe{
+    background: #d3cbd8;
+}
+
+.contactMeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 5px solid red;
+    button{
+        background: #f9e1f7;
+        padding: 10px;
+        width: 50%;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.25rem;
+        color: black;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+}
+
+textarea{
+    resize:none;
+    width: 350px;
+    height: 110px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input{
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    width: 350px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

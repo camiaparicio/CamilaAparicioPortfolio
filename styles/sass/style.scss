@@ -1,0 +1,27 @@
+
+@import 'normalized';
+@import 'header';
+@import 'toolkit';
+@import 'projects';
+@import 'contact';
+
+$mainColor: #d3cbd8;
+$secondColor: #fcb18d;
+$primaryFont: 'Readex Pro', sans-serif;
+$secondaryFont: 'Spectral', serif;
+
+// other colors i liked: 
+
+// three fonts: readex pro, spectral and poppings
+
+html{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
