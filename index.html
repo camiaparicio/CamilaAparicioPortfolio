@@ -22,40 +22,41 @@
 
 <body>
 <!-- header -->
-<section>
-    <header>
-        <div class="headerSection">
-        <nav> 
-            <ul>
-                <li> <a href="#">About</a> </li>
-                <li> <a href="#">Projects</a> </li>
-                <li> <a href="#">ToolKit</a> </li>
-                <li> <a href="#">Contact</a> </li>
-            </ul>
-        </nav>
-        <div class="aboutMeContainer">
-        <div class="wrapper">
-            <div class="intro">
-                <img class="headerImg" src="./img/promo3.jpg" alt="">
+<header id="top">
+    
+    <nav> 
+        <ul>
+            <li> <a href="#top">About</a> </li>
+            <li> <a href="#projects">Projects</a> </li>
+            <li> <a href="#skills">ToolKit</a> </li>
+            <li> <a href="#bottom">Contact</a> </li>
+        </ul>
+    </nav>
+    
+    <div class="wrapper">
+
+        <div class="flexContainer">
+            <div class="aboutMeImg">
+                <img class="headerImg" src="./img/promo3.jpg" alt="self img">
             </div>
-            <div class="aboutMe">
+
+            <div class="aboutMeText">
                 <h1>Camila Aparicio</h1>
                 <h2>Front End Web Developer</h2>
-                <!-- <h2>About Me</h2> -->
                 <p>Hello! I'm Camila, a front end web developer.</p>
                 <p>I'm a recent graduate from Juno College, currently looking for my first role as a Junior Developer!</p>
                 <p>I was born in Buenos Aires, Argentina and currently living in Toronto, Canada.</p> 
                 <button> <a href="./resume/camilaAparicioResume.pdf" download>Download Resume</a></button>
                 <div class="aboutMeIcons">
-                    <a href="https://github.com/camiaparicio"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/camilaaparicio/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/camiaparicio" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/camilaaparicio/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            </div>
+
         </div>
-        </div>
+
+    </div> 
     </header>
-</section>
 <!-- end of header -->
 
 <!-- main -->
@@ -65,7 +66,7 @@
 <section>
     <div class="skillsContainer">
         <div class="wrapper">
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <div class="icons">
                 <ul>
                     <li><i class="fab fa-react"></i><p>React</p></li>
@@ -90,7 +91,7 @@
 
 <section class="sectionThree">
     
-    <h2>PROJECTS</h2>
+    <h2 id="projects">PROJECTS</h2>
      <div class="projectsContainer">
 
 
@@ -149,34 +150,34 @@
 
               
           </section>
-          <!-- end of section -->
+    <!-- end of section -->
+    </main>
 
 
-        <!-- contact -->
-<section class="contactMe">   
+<!-- contact -->
+<section class="contactSection">   
     <div class="wrapper">
-        <div class="contactMeSection">
-            <h2>Let's Connect!</h2>
+        <div class="flexContainer">
 
-            <div class="connectRight">
-                <form action="https://formspree.io/f/xeqnqeek" method="POST">
-                    <label><input type="email" placeholder="email" name="_replyto"></label>
-                    <label><textarea name="message" placeholder="message"></textarea></label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-
-            <div class="connectLeft">
+            <div class="connectText">
+                <h2 id="bottom">Let's Connect!</h2>
                 <h3> You can find me on the links below or you can send me a message here!</h3>
                 <a href="mailto:camilaaparicioo@hotmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/camiaparicio"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/camilaaparicio/"><i class="fab fa-linkedin"></i></a>
             </div>
+        
+        <div class="connectForm">
+            <form action="https://formspree.io/f/xeqnqeek" method="POST">
+                <label><input type="email" placeholder="email" name="_replyto"></label>
+                <label><textarea name="message" placeholder="message"></textarea></label>
+                <!-- your other form fields go here -->
+                <button type="submit">Submit</button>
+            </form>
+            </div>
         </div>
     </div>
 </section>
-    </main>
 
 <!-- footer -->
     <footer>

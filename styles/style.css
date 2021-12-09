@@ -267,20 +267,22 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.headerSection {
-  background-color: #d3cbd8;
-  background-size: cover;
-  min-height: 100vh;
+header {
+  background: #d3cbd8;
 }
 
-.headerImg {
-  width: 70%;
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutMeImg img {
+  width: 90%;
   border-radius: 40%;
   border: 4px solid #fcb18d;
-}
-
-.aboutMeContainer {
-  max-height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 140px;
 }
 
 .aboutMeIcons {
@@ -295,35 +297,41 @@ nav ul li a:hover {
   padding-right: 10px;
 }
 
-.intro {
-  float: left;
+.aboutMeText {
   text-align: center;
-  width: 50%;
-  margin-top: 120px;
-}
-
-.aboutMe {
-  float: right;
-  text-align: center;
-  width: 50%;
   margin-top: 100px;
+  margin-bottom: 140px;
   letter-spacing: 0.5px;
   border: 3px solid #fcb18d;
   padding: 15px;
 }
-.aboutMe h1 {
+.aboutMeText h1 {
   font-size: 60px;
   font-weight: 700;
   color: black;
   text-shadow: 0.3rem 0.3rem 1rem white;
   letter-spacing: -1.5px;
 }
-.aboutMe h2 {
+.aboutMeText h2 {
   font-size: 25px;
   letter-spacing: -1.4px;
 }
 
-.aboutMe button {
+.aboutMeText button {
+  background: #f9e1f7;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #c390bf;
+  border-radius: 0.25rem;
+  line-height: 1.2;
+  width: 30%;
+}
+.aboutMeText button a {
+  color: black;
+  text-decoration: none;
+}
+
+.aboutMeText button {
   width: 170px;
   height: 43px;
   font-size: 12px;
@@ -340,12 +348,12 @@ nav ul li a:hover {
   margin-top: 10px;
   text-align: center;
 }
-.aboutMe button a {
+.aboutMeText button a {
   text-decoration: none;
   color: black;
 }
 
-.aboutMe button:hover {
+.aboutMeText button:hover {
   background-color: #efebeb;
   -webkit-box-shadow: 0px 15px 20px #c5afc3;
           box-shadow: 0px 15px 20px #c5afc3;
@@ -363,6 +371,54 @@ nav ul li a:hover {
           transform: translateY(-1px);
 }
 
+@media (max-width: 1000px) {
+  .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .aboutMeImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .aboutMeImg img {
+    width: 60%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .aboutMeText {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .aboutMeText h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 830px) {
+  .aboutMeImg img {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .aboutMeImg img {
+    width: 70%;
+  }
+}
 .skillsContainer {
   width: 100%;
   padding-top: 50px;
@@ -420,13 +476,18 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 
 .icons > ul:nth-child(1) > li:nth-child(11) > img:nth-child(1) {
   padding-left: 30px;
 }
 
+@media (max-width: 830px) {
+  .icons ul {
+    width: 100%;
+  }
+}
 .sectionThree h2 {
   margin: 0;
   font-size: 40px;
@@ -562,11 +623,13 @@ footer {
   font-size: 19px;
 }
 
-.contactMe {
-  background: #d3cbd8;
-  height: 40vh;
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.contactMe h2 {
+
+.connectText h2 {
   display: inline-block;
   margin: 0;
   font-size: 40px;
@@ -574,7 +637,7 @@ footer {
   position: relative;
   padding-top: 30px;
 }
-.contactMe h2::after {
+.connectText h2::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -584,32 +647,31 @@ footer {
   background-color: #f7c7b1;
   display: block;
 }
-.contactMe .connectRight {
-  float: right;
-  width: 55%;
-}
-.contactMe .connectLeft {
-  width: 45%;
-  float: left;
-}
-.contactMe .connectLeft h3 {
+.connectText h3 {
   font-size: 20px;
+  padding-right: 40px;
 }
-.contactMe .connectLeft i {
+.connectText i {
   font-size: 40px;
   padding-right: 20px;
   color: white;
 }
-.contactMe button {
+
+.connectForm button {
   background: #f9e1f7;
   padding: 10px;
   width: 455px;
   cursor: pointer;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 7px;
   color: black;
   line-height: 1.2;
   text-decoration: none;
+}
+
+.contactSection {
+  background-color: #d3cbd8;
+  padding-bottom: 45px;
 }
 
 textarea {
@@ -618,7 +680,7 @@ textarea {
   height: 110px;
   padding: 12px 20px;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 7px;
   background-color: #f8f8f8;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -628,7 +690,7 @@ input {
   margin-top: 15px;
   padding: 12px 20px;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 7px;
   background-color: #f8f8f8;
   width: 455px;
 }
@@ -647,6 +709,28 @@ form {
   margin-top: 30px;
 }
 
+@media (max-width: 1000px) {
+  .contactMe {
+    height: 70vh;
+  }
+
+  .contactMeSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactMeSection h3 {
+    display: inline-block;
+    text-align: center;
+  }
+}
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
