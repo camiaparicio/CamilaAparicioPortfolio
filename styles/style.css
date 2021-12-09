@@ -270,11 +270,11 @@ nav ul li a:hover {
 .headerSection {
   background-color: #d3cbd8;
   background-size: cover;
-  height: 900px;
+  min-height: 100vh;
 }
 
 .headerImg {
-  width: 65%;
+  width: 70%;
   border-radius: 40%;
   border: 4px solid #fcb18d;
 }
@@ -324,25 +324,51 @@ nav ul li a:hover {
 }
 
 .aboutMe button {
-  background: #f9e1f7;
-  padding: 10px;
-  cursor: pointer;
+  width: 170px;
+  height: 43px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #fff;
   border: none;
-  border-radius: 0.25rem;
-  color: black;
-  line-height: 1.2;
+  border-radius: 45px;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+  text-align: center;
+}
+.aboutMe button a {
   text-decoration: none;
-  width: 30%;
+  color: black;
+}
+
+.aboutMe button:hover {
+  background-color: #efebeb;
+  -webkit-box-shadow: 0px 15px 20px #c5afc3;
+          box-shadow: 0px 15px 20px #c5afc3;
+  color: #fff;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.aboutMeIcons button:hover {
+  background-color: #efebeb;
+  -webkit-box-shadow: 0px 15px 20px #c5afc3;
+          box-shadow: 0px 15px 20px #c5afc3;
+  color: #fff;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .skillsContainer {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  height: 400px;
 }
 .skillsContainer h2 {
-  width: 150px;
   margin: 0;
   font-size: 40px;
   text-transform: uppercase;
@@ -352,10 +378,10 @@ nav ul li a:hover {
 .skillsContainer h2::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 10%;
   height: 0.175rem;
-  right: 0;
-  bottom: 0;
+  left: 45%;
+  bottom: 3px;
   background-color: #f7c7b1;
   display: block;
 }
@@ -397,8 +423,26 @@ nav ul li a:hover {
   width: 60%;
 }
 
-.sectionThree {
-  background-color: #eef;
+.icons > ul:nth-child(1) > li:nth-child(11) > img:nth-child(1) {
+  padding-left: 30px;
+}
+
+.sectionThree h2 {
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.sectionThree h2::after {
+  position: absolute;
+  content: "";
+  width: 13.5%;
+  height: 0.2rem;
+  right: 43.1%;
+  bottom: 2px;
+  background-color: #f7c7b1;
+  display: block;
 }
 
 .projectsContainer {
@@ -520,24 +564,46 @@ footer {
 
 .contactMe {
   background: #d3cbd8;
+  height: 40vh;
 }
-
-.contactMeSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contactMe h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 30px;
 }
-.contactMeSection button {
+.contactMe h2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0.2px;
+  background-color: #f7c7b1;
+  display: block;
+}
+.contactMe .connectRight {
+  float: right;
+  width: 55%;
+}
+.contactMe .connectLeft {
+  width: 45%;
+  float: left;
+}
+.contactMe .connectLeft h3 {
+  font-size: 20px;
+}
+.contactMe .connectLeft i {
+  font-size: 40px;
+  padding-right: 20px;
+  color: white;
+}
+.contactMe button {
   background: #f9e1f7;
   padding: 10px;
-  width: 50%;
+  width: 455px;
   cursor: pointer;
   border: none;
   border-radius: 0.25rem;
@@ -548,7 +614,7 @@ footer {
 
 textarea {
   resize: none;
-  width: 350px;
+  width: 455px;
   height: 110px;
   padding: 12px 20px;
   border: 2px solid #ccc;
@@ -564,7 +630,7 @@ input {
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
-  width: 350px;
+  width: 455px;
 }
 
 form {
@@ -578,6 +644,7 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30px;
 }
 
 html {

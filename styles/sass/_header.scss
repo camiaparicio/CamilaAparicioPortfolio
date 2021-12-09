@@ -29,11 +29,11 @@ nav {
 .headerSection{
     background-color: #d3cbd8;
     background-size: cover;
-    height: 900px;
+    min-height: 100vh;
 }
 
 .headerImg{
-    width: 65%;
+    width: 70%;
     border-radius: 40%;
     border: 4px solid #fcb18d;
 }
@@ -84,17 +84,51 @@ nav {
     }
 }
 
+// .aboutMe button {
+//     background: #f9e1f7;
+//     padding: 10px;
+//     cursor: pointer;
+//     border: 1px solid #c390bf;
+//     border-radius: 0.25rem;
+//     line-height: 1.2;
+//     width: 30%;
+//     a{
+//         color: black;
+//         text-decoration: none;
+//     }
+// }
+
 .aboutMe button {
-    background: #f9e1f7;
-    padding: 10px;
-    cursor: pointer;
+    width: 170px;
+    height: 43px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #fff;
     border: none;
-    border-radius: 0.25rem;
-    color: black;
-    line-height: 1.2;
-    text-decoration: none;
-    width: 30%;
-}
-
-
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    }
+  
+  .aboutMe button:hover {
+    background-color: rgb(239, 235, 235);
+    box-shadow: 0px 15px 20px #c5afc3;
+    color: #fff;
+    transform: translateY(-1px);
+  }
     
+
+  .aboutMeIcons button:hover {
+        background-color: rgb(239, 235, 235);
+        box-shadow: 0px 15px 20px #c5afc3;
+        color: #fff;
+        transform: translateY(-1px);
+      }
