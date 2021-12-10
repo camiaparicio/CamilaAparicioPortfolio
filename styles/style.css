@@ -258,7 +258,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  margin-left: 20px;
 }
 nav ul li a:hover {
   color: white;
@@ -516,6 +515,7 @@ header {
   border: #dfe9f1;
   border-radius: 10%;
   margin: 10px;
+  padding-bottom: 10px;
 }
 .project1 .projectImg,
 .project2 .projectImg,
