@@ -19,85 +19,53 @@
     }
 }
   
-.projectsContainer {
-    // border: 7px solid green;
+.projectContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
+    margin-bottom: 50px;
 }
-  
-.project {
-    // border: 7px solid blue;
-    background-color: #fff;
-    box-shadow: 0.3rem 0.3rem 0.5rem #777;
-    transition: box-shadow 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    max-height: 300px;
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-    a{
-        background: red;
 
+.project1,
+.project2,
+.project3,
+.project4 {
+    max-width: 45%;
+    text-align: center;
+    background-color: #F0F8FF;
+    border: #dfe9f1;
+    border-radius: 10%;
+    margin: 10px;
+    .projectImg{
+        width: 70%;
+    }
+    button{
+        background: #f9e1f7;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 7px;
+    }
+    a{
+        color: black;
+        line-height: 1.2;
+        text-decoration: none;
     }
 }
 
-.projectText {
-      text-align: center;
-      position: absolute;
-      top: -10rem;
-      z-index: 10;
-      transition: top 0.2s;
-}
+// MEDIA QUERIES
 
-.project:hover {
-    box-shadow: 1rem 1rem 1rem #777;
-}
-  
-.project:hover .projectText {
-    top: 2rem;
-    transition: top 0.3s 0.3s;
-}
-  
-.projectName {
-    font-size: 2rem;
-    color: #333;
-    text-transform: capitalize;
-}
-  
-.projectTechnologies {
-    font-size: 1.5rem;
-    color: #e41c6f;
-}
-  
-.projectImg {
-    transition: opacity 0.3s;
-    width: 100%;
-    height: auto;
-}
-  
-.project:hover .projectImg {
-    opacity: 0.3;
-}
-  
-.projectLink {
-    font-size: 1rem;
-    color: #333;
-    border: 1px solid black;
-    padding: 0 1rem;
-    background-color: #fff;
-    position: absolute;
-    bottom: -5rem;
-    transition: bottom 0.3s;
-}
-  
-.project:hover .projectLink {
-    bottom: 3rem;
-    transition: bottom 0.3s 0.3s;
+@media (max-width: 1000px) {
+    .projectContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionThree h2{
+        margin-bottom: 20px;
+    }
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        min-width: 85%;
+  }
 }

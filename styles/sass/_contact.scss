@@ -53,6 +53,33 @@ footer{
         line-height: 1.2;
         text-decoration: none;
     }
+    textarea{
+        resize:none;
+        width: 455px;
+        height: 110px;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        border-radius: 7px;
+        background-color: #f8f8f8;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    input{
+        margin-top: 15px;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        border-radius: 7px;
+        background-color: #f8f8f8;
+        width: 455px;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
 }
 
 .contactSection {
@@ -60,50 +87,21 @@ footer{
     padding-bottom: 45px;
 }
 
-textarea{
-    resize:none;
-    width: 455px;
-    height: 110px;
-    padding: 12px 20px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    background-color: #f8f8f8;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-input{
-    margin-top: 15px;
-    padding: 12px 20px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    background-color: #f8f8f8;
-    width: 455px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
 
 // media queries
     
 @media (max-width: 1000px) {
-        
-    .contactMe{
-        height: 70vh;
-    }
-            
-    .contactMeSection {
+
+    .contactSection {
         display: flex;
         flex-direction: column;
         align-items: center;
-                
+    }    
+    .connectText{
+    text-align: center;       
+    }
     h3{
         display: inline-block;
         text-align: center;
-    }
-    }                    
+    }                   
 }
