@@ -295,6 +295,12 @@ header {
 .aboutMeIcons i {
   padding-right: 10px;
 }
+.aboutMeIcons a:hover {
+  color: #fcb18d;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  font-weight: 500;
+}
 
 .aboutMeText {
   max-width: 55%;
@@ -302,7 +308,6 @@ header {
   margin-top: 100px;
   margin-bottom: 140px;
   letter-spacing: 0.5px;
-  border: 3px solid #fcb18d;
   padding: 15px;
 }
 .aboutMeText h1 {
@@ -343,21 +348,12 @@ header {
 }
 
 .aboutMeText button:hover {
-  background-color: #efebeb;
+  background-color: #fcb18d;
   -webkit-box-shadow: 0px 15px 20px #c5afc3;
           box-shadow: 0px 15px 20px #c5afc3;
-  color: #fff;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-}
-
-.aboutMeIcons button:hover {
-  background-color: #efebeb;
-  -webkit-box-shadow: 0px 15px 20px #c5afc3;
-          box-shadow: 0px 15px 20px #c5afc3;
-  color: #fff;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  color: #e8d7d7;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 @media (max-width: 1000px) {
@@ -541,6 +537,14 @@ header {
   line-height: 1.2;
   text-decoration: none;
 }
+.project1 button:hover,
+.project2 button:hover,
+.project3 button:hover,
+.project4 button:hover {
+  background-color: #f9e1f7;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
 
 @media (max-width: 1000px) {
   .projectContainer {
@@ -608,6 +612,9 @@ footer {
   padding-right: 20px;
   color: white;
 }
+.connectText i:hover {
+  color: #fcb18d;
+}
 
 .connectForm {
   width: 50%;
@@ -623,6 +630,9 @@ footer {
   color: black;
   line-height: 1.2;
   text-decoration: none;
+}
+.connectForm button:hover {
+  background-color: #fcb18d;
 }
 .connectForm form {
   width: 100%;
@@ -647,10 +657,11 @@ footer {
 
 .contactSection {
   background-color: #d3cbd8;
-  padding-bottom: 45px;
+  padding-bottom: 90px;
+  padding-top: 35px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .contactSection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,11 +679,19 @@ footer {
   .connectForm {
     width: 100%;
     margin-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
   .connectForm form {
     text-align: center;
+    max-width: 90%;
+  }
+  .connectForm textarea {
+    width: 400px;
+  }
+  .connectForm button {
+    width: 400px;
+  }
+  .connectForm input {
+    width: 400px;
   }
 
   h3 {

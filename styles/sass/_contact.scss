@@ -11,7 +11,6 @@ footer{
 }
                 
 .connectText{
-// border: 2px solid red;
      h2{
         display: inline-block;
         margin: 0;
@@ -39,6 +38,9 @@ footer{
         padding-right: 20px;
         color: white;
     }
+    i:hover{
+        color: #fcb18d;
+    }
 }
 
 .connectForm{
@@ -55,6 +57,9 @@ footer{
         line-height: 1.2;
         text-decoration: none;
     }
+    button:hover{
+        background-color: #fcb18d;
+    }
     form{
         width: 100%;
     }
@@ -68,7 +73,6 @@ footer{
         border-radius: 7px;
         background-color: #f8f8f8;
     }
-    
     input{
         width: 80%;
         padding: 12px 20px;
@@ -76,18 +80,18 @@ footer{
         border-radius: 7px;
         background-color: #f8f8f8;
     }
-    
 }
 
 .contactSection {
     background-color: #d3cbd8;
-    padding-bottom: 45px;
+    padding-bottom: 90px;
+    padding-top: 35px;
 }
 
 
 // MEDIA QUERIES
     
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
 
     .contactSection {
         display: flex;
@@ -99,10 +103,20 @@ footer{
     .connectForm {
         width: 100%;
         margin-top: 30px;
-        padding-left: 50px;
-        padding-right: 50px;
+        // padding-left: 50px;
+        // padding-right: 50px;
         form{
             text-align: center;
+            max-width: 90%;
+        }
+        textarea{
+            width: 400px;
+        }
+        button{
+            width: 400px;
+        }
+        input{
+            width: 400px;
         }
     }
     h3{
