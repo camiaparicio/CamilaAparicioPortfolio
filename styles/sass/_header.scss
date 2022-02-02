@@ -1,8 +1,6 @@
 nav {
     background-color: #f7c7b1;
-    height: auto;
-    width: 100%;
-    padding: 20px;
+    padding: 15px;
     ul{
         display: flex;
         justify-content: space-evenly;
@@ -14,6 +12,7 @@ nav {
             a{
                 text-decoration: none;
                 color: black;
+                font-size: 18px;
             }
             a:hover{
                 color: white;
@@ -25,7 +24,7 @@ nav {
 }
 
 header{
-    background: white;
+    background: #d3cbd8;
 }
 
 .flexContainer {
@@ -33,9 +32,9 @@ header{
 }
 
 .aboutMeImg img{
-    width: 90%;
-    border-radius: 40%;
-    border: 4.5px solid #fcb18d;
+    width: 80%;
+    border-radius: 50%;
+    border: 4px solid #fcb18d;
     margin-top: 100px;
     margin-bottom: 140px;
 }
@@ -43,8 +42,8 @@ header{
 .aboutMeIcons{
     padding-top: 20px;
     a{
-        font-size: 50px;
-        color: #f7c7b1;
+        font-size: 40px;
+        color: black;
         margin-top: 10px;
     }
     i{
@@ -52,28 +51,28 @@ header{
     }
     a:hover{
         color: #fba178;
-        transition: color 0.3s;
+        transition: color 0.2s;
         font-weight: 500;
     }
 }
 
 .aboutMeText {
     max-width: 50%;
-    text-align: center;
     margin-top: 100px;
     margin-bottom: 140px;
     letter-spacing: 0.5px;
     padding: 15px;
     h1{
-        font-size: 60px;
-        font-weight: 600;
+        font-size: 65px;
+        margin-bottom: 0;
+        font-weight: 400;
         color: black;
-        text-shadow: 0.3rem 0.3rem 1rem #fbddce;
-        letter-spacing: -1.5px;
+        // text-shadow: 0.3rem 0.3rem 1rem #fbddce;
+        letter-spacing: -1px;
     }
     h2{
         font-size: 25px;
-        letter-spacing: -1px;
+        letter-spacing: -0.5px;
     }
     p{
         font-size: 17px;
@@ -92,7 +91,6 @@ header{
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-top: 10px;
     text-align: center;
     a{
         text-decoration: none;
