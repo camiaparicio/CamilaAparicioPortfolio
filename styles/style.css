@@ -237,9 +237,7 @@ html {
 
 nav {
   background-color: #f7c7b1;
-  height: auto;
-  width: 100%;
-  padding: 20px;
+  padding: 15px;
 }
 nav ul {
   display: -webkit-box;
@@ -258,6 +256,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 nav ul li a:hover {
   color: white;
@@ -266,7 +265,7 @@ nav ul li a:hover {
 }
 
 header {
-  background: white;
+  background: #d3cbd8;
 }
 
 .flexContainer {
@@ -276,9 +275,9 @@ header {
 }
 
 .aboutMeImg img {
-  width: 90%;
-  border-radius: 40%;
-  border: 4.5px solid #fcb18d;
+  width: 80%;
+  border-radius: 50%;
+  border: 4px solid #fcb18d;
   margin-top: 100px;
   margin-bottom: 140px;
 }
@@ -287,8 +286,8 @@ header {
   padding-top: 20px;
 }
 .aboutMeIcons a {
-  font-size: 50px;
-  color: #f7c7b1;
+  font-size: 40px;
+  color: black;
   margin-top: 10px;
 }
 .aboutMeIcons i {
@@ -296,29 +295,28 @@ header {
 }
 .aboutMeIcons a:hover {
   color: #fba178;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   font-weight: 500;
 }
 
 .aboutMeText {
   max-width: 50%;
-  text-align: center;
   margin-top: 100px;
   margin-bottom: 140px;
   letter-spacing: 0.5px;
   padding: 15px;
 }
 .aboutMeText h1 {
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 65px;
+  margin-bottom: 0;
+  font-weight: 400;
   color: black;
-  text-shadow: 0.3rem 0.3rem 1rem #fbddce;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
 }
 .aboutMeText h2 {
   font-size: 25px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 .aboutMeText p {
   font-size: 17px;
@@ -338,7 +336,6 @@ header {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  margin-top: 10px;
   text-align: center;
 }
 .aboutMeText button a {
@@ -400,8 +397,7 @@ header {
   }
 }
 .skillsContainer {
-  background: #d3cbd8;
-  width: 100%;
+  background: white;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 30px;
@@ -438,7 +434,7 @@ header {
       align-content: center;
 }
 .icons i {
-  font-size: 60px;
+  font-size: 65px;
 }
 .icons li {
   list-style: none;
