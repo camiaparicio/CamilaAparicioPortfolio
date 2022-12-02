@@ -4,24 +4,18 @@
 @import 'toolkit';
 @import 'projects';
 @import 'contact';
+@import 'mobileNav';
 
-$mainColor: #d3cbd8;
+$background: #f4eeff;
+$main: #d3cbd8;
 $secondColor: #fcb18d;
-$primaryFont: 'Readex Pro', sans-serif;
-$secondaryFont: 'Spectral', serif;
+$color: #f4eeff;
 
-// other colors i liked: 
 
-// three fonts: readex pro, spectral and poppings
+// $thirdFont: Montserrat, sans-serif;
+// three fonts: readex pro, spectral and poppings, montserrat
+//$primaryFont: 'Readex Pro', sans-serif;
 
-html{
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-.wrapper {
-    max-width: 1200px;
-    width: 85%;
-    margin: 0 auto;
-}
-
+    //font-family: "Karla", sans-serif;
+    //font-family: 'Readex Pro', sans-serif;
+    //font-family: 'Montserrat', sans-serif;

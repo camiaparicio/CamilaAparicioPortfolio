@@ -1,77 +1,45 @@
 
-.sectionThree{
+.portfolio {
+    flex-direction: column;
+    margin: 40px 0;
+
     h2{
-        margin: 0;
-        font-size: 40px;
-        text-transform: uppercase;
-        text-align: center;
-        position: relative; 
+        font-size: 20px;
+        font-weight: 500;
     }
-    h2::after{
-        position: absolute;
-        content: '';
-        width: 13.5%;
-        height: 0.2rem;
-        right: 43.1%;
-        bottom: 2px;
-        background-color: #f7c7b1;
-        display: block;
-    }
-}
-  
-.projectContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
 
-.project1,
-.project2,
-.project3,
-.project4 {
-    max-width: 45%;
-    text-align: center;
-    background-color: #F0F8FF;
-    border: #dfe9f1;
-    border-radius: 10%;
-    margin: 10px;
-    padding-bottom: 10px;
-    .projectImg{
-        width: 70%;
+    p {
+        font-size: 14px;
     }
-    button{
-        background: #f9e1f7;
-        padding: 10px;
-        cursor: pointer;
-        border: none;
-        border-radius: 7px;
-    }
-    a{
-        color: black;
-        line-height: 1.2;
-        text-decoration: none;
-    }
-    button:hover{
-        background-color: #f6c5f2;
-        transform: translateY(2px);
+
+    .leftSide{
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
-
-// MEDIA QUERIES
-
-@media (max-width: 1000px) {
-    .projectContainer{
-        flex-direction: column;
-        align-items: center;
-    }
-    .sectionThree h2{
-        margin-bottom: 20px;
-    }
-    .project1,
-    .project2,
-    .project3,
-    .project4 {
-        min-width: 85%;
+.fade-in-image {
+    opacity: 50%;
   }
+  
+  .fade-in-image:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+  }
+
+@media (min-width: 600px) {
+    
+    .project{
+        display: flex;
+    }
+    
+    .leftSide{
+        width: 40%;
+        margin: 0 50px 30px 0;
+    }
+    .rightSide{
+        width: 60%;
+    }
 }

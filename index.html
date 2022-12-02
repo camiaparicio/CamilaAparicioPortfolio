@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Aparicio</title>
-    <link rel="icon" href="./img/C.png">
+    <title>Camila Aparicio | Frontend Web Developer</title>
+    <link rel="icon" href="./img/emoticon.png">
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- font awesome -->
@@ -15,158 +15,199 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Readex+Pro&family=Spectral:wght@400;500&display=swap" rel="stylesheet"> 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Readex+Pro&family=Spectral:wght@400;500&display=swap" rel="stylesheet"> 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Readex+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDC48KX20J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GDC48KX20J');
+</script>
+
+<!-- js -->
+<script src="scripts.js"></script> 
+
 
 <body>
 <!-- header -->
 <header id="top">
-    
-    <nav> 
+
+<!-- burger nav -->
+
+    <!-- <nav class="hamNavIcon">
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+            <div class="sr-only">Mobile Navigation Toggle</div>
+        </div>
+    </nav>
+    <nav class="hamNav">
+        <ul class="hamNavLinks">
+            <li><a href="#about" class="hamLinks" aria-label="go to about section">about</a></li>
+            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
+            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
+            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">contact</a></li>
+            <li>
+                <a href="./assets/resume.pdf" class="hamLinks" target="_blank"
+                    aria-label="open Chris' resume in a new tab">resume <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+
+<!-- below -->
+
+    <nav  class="mainNav" role="navigation"> 
         <ul>
             <li> <a href="#top">About</a> </li>
-            <li> <a href="#projects">Projects</a> </li>
-            <li> <a href="#skills">ToolKit</a> </li>
+            <li> <a href="#projects">Portfolio</a> </li>
+            <li> <a href="#skills">Toolkit</a> </li>
             <li> <a href="#bottom">Contact</a> </li>
         </ul>
     </nav>
-    
-    <div class="wrapper">
-
-        <div class="flexContainer">
+    <div class="wrapper" id="top">
+        <div class="headerContainer">
             <div class="aboutMeImg">
-                <img class="headerImg" src="./img/promo3.jpg" alt="self img">
+                <img class="headerImg" src="./img/selfimg.jpg" alt="self image">
             </div>
-
             <div class="aboutMeText">
-                <h1>CAMILA APARICIO</h1>
-                <h2>Front End Web Developer</h2>
-                <p>Hello! I'm a recent graduate from Juno College. I have a passion for building responsive, accessible, and engaging websites and apps. My past experiences working in social work and administration cultivated my strong communication and problem solving skills.</p>
-                <p>I was born in Buenos Aires, Argentina and currently living in Toronto, Canada. When I’m not coding, you can likely find me walking around the city with my puppy Rio or catching up on my favourite shows.</p> 
-                <button> <a href="./resume/CamilaAparicioResume2.pdf" download>Download Resume</a></button>
-                <div class="aboutMeIcons">
-                    <a href="https://github.com/camiaparicio" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/camilaaparicio/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <div>
+                    <h1>Camila Aparicio</h1>
+                    <!-- <h2>Frontend Web Developer</h2> -->
+                    <p>Hello! 👋 I’m Camila, a Toronto based Frontend Web Developer. I am passionate about building clean, accessible, and responsive web applications. </p>
+                    <button> <a href="./resume/Camila Aparicio - December22.pdf" download target="_blank"><i class="fas fa-external-link-alt"></i> Resume</a></button>
                 </div>
             </div>
-
         </div>
-
     </div> 
-    </header>
-<!-- end of header -->
-
-<!-- main -->
+</header>
 <main>
 
-<!-- toolkit -->
-<section>
-    <div class="skillsContainer">
-        <div class="wrapper">
-            <h2 id="skills">Skills</h2>
-            <div class="icons">
+    <nav  class="socialsNav">
+        <ul>
+            <li>email</li>
+            <li><a href="https://github.com/camiaparicio" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/camilaaparicio/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </nav>
+
+
+<section class="skills" id="skills">
+    <div class="wrapper">
+        <div class="skillsContainer">
+            <div class="skillsColumn">
+                <h2>ToolKit</h2>
                 <ul>
-                    <li><i class="fab fa-react"></i><p>React</p></li>
-                    <li><i class="fab fa-html5"></i><p>HTML5</p></li>
-                    <li> <i class="fab fa-css3-alt"></i><p>CSS</p></li>
-                    <li><i class="fab fa-js"></i><p>JavaScript</p></li>
-                    <li><i class="fab fa-github"></i><p>Git/Github</p></li>
-                    <li><i class="fab fa-sass"></i><p>Sass</p></li>
-                    <li><i class="devicon-jquery-plain"></i><p>jQuery</p></li>
-                    <li><i class="fas fa-universal-access"></i><p>Accessibility</p></li>
-                    <li><img src="./img/rsz_api.png" alt=""><p>Rest APIs</p></li>
-                    <li><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
-                    <li><img src="./img/rsz_responsive.png" alt=""><p>Responsive Design</p></li>
+                    <li>HTML5</li>
+                    <li>CSS / SCSS</li>
+                    <li>JavaScript & APIs </li>
+                    <li>React</li>
+                    <li>Responsive Design</li>
+                    <li>Browser Testing</li>
+                    <li>Git/Github</li>
+                    <li>Figma</li>
+                    <li>Firebase</li>
+                    <li>WCAG 2.0 / AODA Compliance</li>
+                    <li>Content Management Systems</li>
+                </ul>
+            </div>
+            <div class="skillsColumn">
+                <h2>Education</h2>
+                <ul>
+                    <li class="bold">Juno College of Technology</li>
+                    <li>- Web Development Bootcamp</li>
+                    <li>- Advanced JavaScript</li>
+                    <li>- UX Design</li>
+                </ul>
+                <h2>Experience</h2>
+                <ul>
+                    <li class="bold">Canadian Red Cross</li>
+                    <li>2021-2022</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- end of toolkit -->
 
 <!-- start of projects -->
 
-<section class="sectionThree">
+<section id="projects">
     <div class="wrapper">
-
-    <h2 id="projects">PROJECTS</h2>
-     <div class="projectContainer">
-
-    <div class="project1">
-        <img src="./img/proj4.png" class="projectImg" />
-        <h2 class="projectName">Movie Searcher</h2>
-        <h4 class="projectTechnologies">Vanilla JavaScript / REST API / Pair Programming</h4>
-        <p>Allows for users to search up movies through the IMDB API. Pair Programming collaborative project.</p>
-        <button> <a href="https://github.com/camila-james/movie-searcher" class="projectLink" target="_blank">Github</a> </button>
-        <button> <a href="https://camila-james.github.io/movie-searcher/" class="projectLink" target="_blank">Live Link</a> </button>
-     </div>
-
-    <div class="project2">
-        <img src="./img/proj 1.png" class="projectImg"/>
-        <h2 class="projectName">Meme in a Giffy</h2>
-        <h4 class="projectTechnologies">React / Firebase / REST API / Group Programing</h4>
-        <p>Allows user to generate their own memes by inputting text & memes are saved in Firebase database. Group Programming collaborative project.</p>
-        <button> <a href="https://github.com/worst-group-ever/MemesInAGiffy" class="projectLink" target="_blank">Github</a> </button>
-        <button> <a href="https://hardcore-banach-c7c40d.netlify.app/" class="projectLink" target="_blank">Live Link</a> </button>
-    </div>
-
-    <div class="project3">
-        <img src="./img/proj 2.png" class="projectImg" />
-        <h2 class="projectName">E-commerce Store</h2>
-        <h4 class="projectTechnologies">Vanilla JS / REST API</h4>
-        <p>An e-commerce store that provide categories for items.</p>
-        <button> <a href="https://github.com/camiaparicio/projectThree" class="projectLink" target="_blank">Github</a> </button>
-        <button> <a href="https://camilaaparicioproject3.netlify.app/" class="projectLink" target="_blank">Live Link</a> </button>
-    </div>
-
-    <div class="project4">
-        <img src="./img/proj 3.png" class="projectImg" />
-        <h2 class="projectName">Delicious</h2>
-        <h4 class="projectTechnologies">HTML / CSS</h4>
-        <p>Multi-page conversion of a PSD design made fully responsive and accessible.</p>
-        <button> <a href="https://github.com/camiaparicio/projectOne" class="projectLink" target="_blank">Github</a> </button>
-        <button> <a href="https://camiaparicio.github.io/projectOne/" class="projectLink" target="_blank">Live Link</a> </button>
-    </div>
-
-     </div>
-</section>
-    <!-- end of section -->
-    </main>
-
-
-<!-- contact -->
-<section class="contactSection">   
-    <div class="wrapper">
-        <div class="flexContainer">
-
-            <div class="connectText">
-                <h2 id="bottom">Let's Connect!</h2>
-                <h3> You can find me on the links below or you can send me a message here!</h3>
-               <div class="connectIcons">
-                    <a href="mailto:camilaaparicioo@hotmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/camiaparicio"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/camilaaparicio/"><i class="fab fa-linkedin"></i></a>
+        <div class="portfolio">
+            <h1>Portfolio</h1>
+            <div class="project">
+                <div class="leftSide">
+                    <a href=""><img src="./img/crossplay.png" alt="" class="fade-in-image"></a>
+                </div>
+                <div class="rightSide">
+                    <h2>CrossPlay - Canadian Red Cross</h2>
+                    <p>Developed using Kentico CMS, this custom site is used for gamers to support the CRC fundraising. </p>
+                    <ul>
+                        <li>Kentico CMS</li>
+                        <li>Responsive Design</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="leftSide">
+                    <a href=""><img src="./img/holiday.png" alt="" class="fade-in-image"></a>
+                    </div>
+                <div class="rightSide">
+                    <h2>Holiday Campaign - Canadian Red Cross</h2>
+                    <p>Worked on the holiday Campaign for 2022 donations.</p>
+                    <ul>
+                        <li>Engaging Networks</li>
+                        <li>Form UI</li>
+                        <li>Figma</li>
+                    </ul>
                 </div>
             </div>
         
-        <div class="connectForm">
-            <form action="https://formspree.io/f/xeqnqeek" method="POST">
-                <label><input type="email" placeholder="email" name="_replyto"></label>
-                <label><textarea name="message" placeholder="message"></textarea></label>
-                <!-- your other form fields go here -->
-                <button type="submit">Submit</button>
-            </form>
+            <div class="project">
+                <div class="leftSide">
+                    <a href=""><img src="./img/hackflix2.png" alt="" class="fade-in-image"></a>
+                </div>
+                <div class="rightSide">
+                    <h2>Hackflix</h2>
+                    <p>Allows for users to search up movies through the TMDB API. Pair Programming collaborative project. </p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Rest APIs</li>
+                        <li>Pair Programing</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </div>
+
 </section>
 
-<!-- footer -->
-    <footer>
-        <p>designed & coded by Camila👩🏻‍💻</p>
-    </footer>
+    </main>
 
+    <section class="contactSection">  
+        <div class="wrapper">
+            <h1 id="bottom">Let's Connect!</h1>
+            <a href="mailto:camilaaparicioo@hotmail.com" target="_blank">camilaaparicioo@hotmail.com</a>
+            <div class="connectIcons">
+                <a href="mailto:camilaaparicioo@hotmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/camiaparicio" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/camilaaparicio/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2022 Camila Aparicio</p>
+    </footer>
 </body>
 </html>

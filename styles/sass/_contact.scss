@@ -1,126 +1,33 @@
 
-footer{
-    background-color: #fcb18d;
-    display: flex;
-    justify-content: center;
-    font-size: 19px;
-}
-
-.flexContainer{
-    display: flex;
-}
-                
-.connectText{
-     h2{
-        display: inline-block;
-        margin: 0;
-        font-size: 40px;
-        text-transform: uppercase;
-        position: relative; 
-        padding-top: 30px;
+.contactSection{
+    padding-bottom: 40px;
+    a{
+        text-decoration: underline;
     }
-    h2::after{
+    h1{
+        position: relative; 
+        padding-top: 40px;
+    }
+    h1::after{
         position: absolute;
         content: '';
-        width: 100%;
-        height: 0.3rem;
+        width: 100px;
+        height: 0.2px;
         left: 0;
-        bottom: 0.2px;
+        bottom: -4px;
         background-color: #f7c7b1;
         display: block;
-    }
-    h3{
-        font-size: 20px;
-        padding-right: 40px;
     }
     i{
         font-size: 40px;
         padding-right: 20px;
-        color: white;
+        padding-top: 20px;
     }
     i:hover{
         color: #fcb18d;
     }
 }
 
-.connectForm{
-    width: 50%;
-    margin-top: 50px;
-    button{
-        width: 80%;
-        background: #f9e1f7;
-        padding: 10px;
-        cursor: pointer;
-        border: none;
-        border-radius: 7px;
-        color: black;
-        line-height: 1.2;
-        text-decoration: none;
-    }
-    button:hover{
-        background-color: #fcb18d;
-    }
-    form{
-        width: 100%;
-    }
-    textarea{
-        width: 80%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        padding: 12px 20px;
-        resize:none;
-        border: 2px solid #ccc;
-        border-radius: 7px;
-        background-color: #f8f8f8;
-    }
-    input{
-        width: 80%;
-        padding: 12px 20px;
-        border: 2px solid #ccc;
-        border-radius: 7px;
-        background-color: #f8f8f8;
-    }
+footer{
+    text-align: center;
 }
-
-.contactSection {
-    background-color: #d3cbd8;
-    padding-bottom: 90px;
-    padding-top: 35px;
-}
-
-
-// MEDIA QUERIES
-    
-@media (max-width: 999px) {
-
-    .contactSection {
-        display: flex;
-        flex-direction: column;
-        }
-    .connectText{
-       text-align: center;
-    }
-    .connectForm {
-        width: 100%;
-        margin-top: 30px;
-        // padding-left: 50px;
-        // padding-right: 50px;
-        form{
-            text-align: center;
-            max-width: 90%;
-        }
-        textarea{
-            width: 300px;
-        }
-        button{
-            width: 300px;
-        }
-        input{
-            width: 300px;
-        }
-    }
-    h3{
-        display: inline-block;
-        text-align: center;
-    }
-}                    
