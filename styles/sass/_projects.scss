@@ -5,11 +5,7 @@
 
     h2{
         font-size: 20px;
-        font-weight: 500;
-    }
-
-    p {
-        font-size: 14px;
+        font-weight: 600;
     }
 
     .leftSide{
@@ -20,16 +16,20 @@
     }
 }
 
-.fade-in-image {
-    opacity: 50%;
-  }
+// .fade-in-image {
+//     opacity: 50%;
+//   }
   
-  .fade-in-image:hover {
-    opacity: 100%;
-    transition: opacity 1s;
-  }
+//   .fade-in-image:hover {
+//     opacity: 100%;
+//     transition: opacity 1s;
+//   }
 
 @media (min-width: 600px) {
+
+    .portfolio h2 {
+        margin-top: 0;
+    }
     
     .project{
         display: flex;
