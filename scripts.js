@@ -1,31 +1,16 @@
 
-//Create portfolio object
-const portfolio = {};
+const primaryNav = document.querySelector('.primary-navigation');
+const navToggle = document.querySelector('.mobile-nav-toggle');
 
-// Hamburger Nav Function
-portfolio.hamNavToggle = () => {
+navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute('data-visible');
 
-    // Hamburger nav slide-out toggle
-    hamNavToggle = document.querySelector(".hamNavIcon");
-    portfolio.hamNav = document.querySelector(".hamNav");
-    
-    hamNavToggle.addEventListener("click", () => {
-        portfolio.hamNav.classList.toggle("openNav");
-    });
+    if (visibility === "false") {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true);
+    } else if (visibility === "true") {
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
+    }
+});
 
-    // Remove Hamburger Nav from view once links are clicked
-    const hamLinks = document.querySelectorAll(".hamLinks");
-
-    hamLinks.forEach(hamLinks => {
-        hamLinks.addEventListener('click', () => portfolio.hamNav.classList.remove("openNav"))
-    });
-    
-};
-
-
-//init function
-portfolio.init = () => {
-    portfolio.hamNavToggle();
-}
-
-portfolio.init();

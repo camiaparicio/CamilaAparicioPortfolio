@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Readex+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+
+    <!-- js stylesheet-->
+    <script src="scripts.js" defer></script> 
+
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -33,47 +37,32 @@
   gtag('config', 'G-GDC48KX20J');
 </script>
 
-<!-- js -->
-<script src="scripts.js"></script> 
-
-
 <body>
 <!-- header -->
 <header id="top">
 
-<!-- burger nav -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button>
 
-    <!-- <nav class="hamNavIcon">
-        <div class="toggle">
-            <i class="fas fa-bars"></i>
-            <div class="sr-only">Mobile Navigation Toggle</div>
-        </div>
-    </nav>
-    <nav class="hamNav">
-        <ul class="hamNavLinks">
-            <li><a href="#about" class="hamLinks" aria-label="go to about section">about</a></li>
-            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
-            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
-            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">contact</a></li>
+    <nav> 
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+            <li class="active">
+                <a href="#top">About</a>
+            </li>
             <li>
-                <a href="./assets/resume.pdf" class="hamLinks" target="_blank"
-                    aria-label="open Chris' resume in a new tab">resume <i
-                        class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <a href="#projects">Portfolio</a>
+            </li>
+            <li> 
+                <a href="#skills">Skills</a> 
+            </li>
+            <li> 
+                <a href="#bottom">Contact</a> 
             </li>
         </ul>
-    </nav> -->
+    </nav> 
 
-<!-- below -->
 
-    <nav  class="mainNav" role="navigation"> 
-        <ul>
-            <li> <a href="#top">About</a> </li>
-            <li> <a href="#projects">Portfolio</a> </li>
-            <li> <a href="#skills">Toolkit</a> </li>
-            <li> <a href="#bottom">Contact</a> </li>
-        </ul>
-    </nav>
     <div class="wrapper" id="top">
         <div class="headerContainer">
             <div class="aboutMeImg">
@@ -104,10 +93,10 @@
     <div class="wrapper">
         <div class="skillsContainer">
             <div class="skillsColumn">
-                <h2>ToolKit</h2>
+                <h2>Skills</h2>
                 <ul>
                     <li>HTML5</li>
-                    <li>CSS / SCSS</li>
+                    <li>CSS3/SCSS</li>
                     <li>JavaScript & APIs </li>
                     <li>React</li>
                     <li>Responsive Design</li>
@@ -124,14 +113,14 @@
                 <ul>
                     <li class="bold">Canadian Red Cross</li>
                     <li>UI Web Developer</li>
-                    <li>2021-2022</li>
+                    <li>2022-2023</li>
                 </ul>
                 <h2>Education</h2>
                 <ul>
                     <li class="bold">Juno College of Technology</li>
                     <li>• Web Development Bootcamp</li>
-                    <li>• Advanced JavaScript</li>
-                    <li>• UX Design</li>
+                    <li>• Advanced JavaScript Course</li>
+                    <li>• UX Design Course</li>
                 </ul>
             </div>
         </div>
@@ -150,7 +139,7 @@
                 </div>
                 <div class="rightSide">
                     <h2><a href="https://www.redcross.ca/crossplay/">CrossPlay - Canadian Red Cross</a></h2>
-                    <p>Developed using Kentico CMS, this custom site is used for gamers to support the CRC fundraising. </p>
+                    <p>Cross Play encourages gamers to support the fundraising work of the CRC.  Worked on the styling, development, and maintenance alongside developers and designers. Also implemented accessibility compliance.</p>
                     <ul>
                         <li>Kentico CMS</li>
                         <li>Responsive Design</li>
@@ -165,7 +154,7 @@
                     </div>
                 <div class="rightSide">
                     <h2><a href="https://donate.redcross.ca/page/117278/donate/1">Holiday Campaign - Canadian Red Cross</a></h2>
-                    <p>Worked on the holiday Campaign for 2022 donations.</p>
+                    <p>Worked closely with the design team and developers to bring the 2022 holiday campaign website to life, integrating interactive elements and ensuring that all content was properly formatted and displayed. </p>
                     <ul>
                         <li>Engaging Networks</li>
                         <li>Form UI</li>
@@ -180,7 +169,7 @@
                 </div>
                 <div class="rightSide">
                     <h2><a href="https://camila-james.github.io/movie-searcher/">Hackflix</a></h2>
-                    <p>Allows for users to search up movies through the TMDB API. Pair Programming collaborative project. </p>
+                    <p>Hackflix allows for users to search movies through the TMDB API. Pair Programming collaborative project at Juno College of Technology. </p>
                     <ul>
                         <li>JavaScript</li>
                         <li>Rest APIs</li>
