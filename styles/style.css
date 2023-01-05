@@ -240,13 +240,21 @@ html {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .primary-navigation li {
-  padding-bottom: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 15px 0;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-transform: uppercase;
+}
+.primary-navigation a {
+  margin-right: 40px;
+}
+.primary-navigation a:hover {
+  border-bottom: 1px solid #333;
 }
 
 .mobile-nav-toggle {
@@ -262,7 +270,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 90px 25px 25px 30px;
+    padding: 80px 25px 25px 30px;
     background: hsla(0deg, 0%, 100%, 0.8);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -270,6 +278,7 @@ html {
     transition: -webkit-transform 350ms ease-out;
     transition: transform 350ms ease-out;
     transition: transform 350ms ease-out, -webkit-transform 350ms ease-out;
+    height: 313px;
   }
   .primary-navigation[data-visible=true] {
     -webkit-transform: translateX(0%);
@@ -326,7 +335,7 @@ header {
 
 @media (min-width: 600px) {
   .headerContainer {
-    margin: 200px 0 200px 0;
+    margin: 100px 0 200px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,7 +458,7 @@ footer {
 body {
   background-color: #f4eeff;
   font-family: "Spartan", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -492,7 +501,7 @@ h2 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -507,7 +516,7 @@ ul {
 
 @media (min-width: 600px) {
   h1 {
-    font-size: 45px;
+    font-size: 35px;
     letter-spacing: 2px;
   }
   h2 {
