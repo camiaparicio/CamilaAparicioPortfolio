@@ -306,7 +306,7 @@ header {
 }
 
 .headerContainer {
-  margin: 150px 0 50px 0;
+  padding: 90px 0;
 }
 
 .socialsNav {
@@ -315,6 +315,7 @@ header {
 
 .aboutMeImg img {
   width: 160px;
+  border-radius: 50%;
 }
 
 .aboutMeText p {
@@ -328,6 +329,7 @@ header {
   background-color: #dcd6f7;
   cursor: pointer;
   border: none;
+  border-radius: 25px;
 }
 .aboutMeText button:hover {
   background-color: #c0b6ee;
@@ -335,7 +337,6 @@ header {
 
 @media (min-width: 600px) {
   .headerContainer {
-    margin: 100px 0 200px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -373,6 +374,10 @@ header {
   font-size: 25px;
   font-weight: 800;
   border-bottom: 1px solid #f7c7b1;
+}
+.skills img {
+  width: 28px;
+  padding-right: 10px;
 }
 
 div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {

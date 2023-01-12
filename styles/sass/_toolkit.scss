@@ -7,10 +7,14 @@
         list-style-type: none;
         padding: 0;
     }
-    h2{
+    h2 {
         font-size: 25px;
         font-weight: 800;
         border-bottom: 1px solid #f7c7b1;
+    }
+    img {
+        width: 28px;
+        padding-right: 10px;
     }
 }
 
@@ -24,7 +28,7 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
         padding-left: 130px;
     }
 
-    .skillsContainer{
+    .skillsContainer {
         display: flex;
     }
 }
