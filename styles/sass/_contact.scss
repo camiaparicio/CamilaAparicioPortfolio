@@ -2,13 +2,13 @@
 .contactSection {
     background-color: white;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
     a {
         text-decoration: underline;
     }
     h1 {
         position: relative; 
-        padding-top: 40px;
+        padding-top: 50px;
     }
     // h1::after {
     //     position: absolute;
@@ -24,12 +24,13 @@
         font-size: 40px;
         padding-right: 20px;
         padding-top: 20px;
-    }
-    i:hover {
-        color: #c0b6ee;
+
+        &:hover {
+            color: #c0b6ee;
+        }
     }
 }
 
-footer{
+footer {
     text-align: center;
 }

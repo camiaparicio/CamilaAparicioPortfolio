@@ -259,7 +259,7 @@ html {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .primary-navigation {
     position: fixed;
     z-index: 1000;
@@ -303,7 +303,7 @@ html {
   padding: 100px 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .headerContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,7 +321,7 @@ html {
      object-fit: contain;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .aboutMeImg {
     width: 300px;
   }
@@ -355,7 +355,7 @@ html {
   background-color: #c0b6ee;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .aboutMeText {
     width: 50%;
     margin-left: 60px;
@@ -395,7 +395,7 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
   font-size: italic;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 815px) {
   .skillsColumn:nth-child(2) {
     padding-left: 130px;
   }
@@ -427,7 +427,7 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
   transition: opacity 1s;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .portfolio h2 {
     margin-top: 0;
   }
@@ -449,14 +449,14 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
 .contactSection {
   background-color: white;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 .contactSection a {
   text-decoration: underline;
 }
 .contactSection h1 {
   position: relative;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .contactSection i {
   font-size: 40px;
