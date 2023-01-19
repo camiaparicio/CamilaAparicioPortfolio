@@ -3,13 +3,19 @@
 
 .primary-navigation {
     display: flex;
-    justify-content: flex-start;
-    padding: 10px 0;
+    justify-content: flex-end;
+    padding: 20px 0;
+    text-transform: uppercase;
+
     a {
-        margin-right: 30px;
-    }
-    a:hover{
-        border-bottom: 2px solid #333;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        margin-left: 30px;
+        font-size: 13px;
+
+        &:hover{
+            border-bottom: 2px solid #333;
+        }
     }
 }
 
@@ -55,68 +61,74 @@
 
 // NAV BAR DONE
 
-header {
-    min-height: 100vh;
-}
-
 .headerContainer {
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
-.socialsNav{
-    display: none;
-}
-
-.aboutMeImg {
-    img {
-        width: 160px;
-        border-radius: 50%;
+@media (min-width:600px) {
+    .headerContainer{
+        display: flex;
     }
 }
 
+
+.aboutMeImg {
+    display: flex;
+    img {
+        width: 170px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width:600px) {
+    .aboutMeImg {
+        width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+}
+
 .aboutMeText{
+    h1 {
+        font-size: 60px;
+        margin: 10px 0;
+    }
     p {
         line-height: 27px;
         max-width: 450px;
     }
+
     button {
-        font-weight: 700;
         width: 170px;
         height: 43px;
         text-transform: uppercase;
+        text-decoration: none;
+        color: #333;
         background-color: #dcd6f7;
         cursor: pointer;
         border: none;
         border-radius: 25px;
-    }
-    button:hover{
-        background-color: #c0b6ee;
-    }
-}
+        letter-spacing: 0.15rem;
+        font-size: 13px;
+        font-weight: 700;
 
-// media queries below
-
-@media (min-width:600px) {
-
-.headerContainer{
-    // margin: 100px 0px;
-    display: flex;
-}
-
-.aboutMeImg {
-    width: 300px;
-        img {
-            width: 100%;
+        &:hover,
+        &:active,
+        &focus {
+            background-color: #c0b6ee;
         }
     }
+}
 
-.aboutMeText {
-    width: 50%;
-    margin-left: 60px;
-    display: flex;
-    align-items: center;
-    h1{
-        margin: 0;
-    }
+@media (min-width:600px) {
+    .aboutMeText {
+        width: 50%;
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+            h1{
+                margin: 0;
+            }
 }
 }

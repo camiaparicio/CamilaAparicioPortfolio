@@ -1,30 +1,32 @@
 
-.contactSection{
+.contactSection {
+    background-color: white;
+    text-align: center;
     padding-bottom: 40px;
-    a{
+    a {
         text-decoration: underline;
     }
-    h1{
+    h1 {
         position: relative; 
         padding-top: 40px;
     }
-    h1::after{
-        position: absolute;
-        content: '';
-        width: 100px;
-        height: 0.2px;
-        left: 0;
-        bottom: -4px;
-        background-color: #f7c7b1;
-        display: block;
-    }
-    i{
+    // h1::after {
+    //     position: absolute;
+    //     content: '';
+    //     width: 100px;
+    //     height: 0.2px;
+    //     left: 0;
+    //     bottom: -4px;
+    //     background-color: #f7c7b1;
+    //     display: block;
+    // }
+    i {
         font-size: 40px;
         padding-right: 20px;
         padding-top: 20px;
     }
-    i:hover{
-        color: #fcb18d;
+    i:hover {
+        color: #c0b6ee;
     }
 }
 
