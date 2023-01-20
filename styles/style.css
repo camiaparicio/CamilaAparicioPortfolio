@@ -443,7 +443,7 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
     max-width: 500px;
   }
   .rightSide {
-    width: 60%;
+    max-width: 380px;
   }
 }
 .contactSection {
