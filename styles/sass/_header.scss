@@ -63,6 +63,7 @@
 
 .headerContainer {
     padding: 100px 0;
+    // padding: 60px 0 180px 0;
 }
 
 @media (min-width:800px) {
@@ -74,6 +75,7 @@
 
 .aboutMeImg {
     display: flex;
+    flex-shrink: 0;
     img {
         width: 170px;
         object-fit: contain;

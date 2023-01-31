@@ -314,6 +314,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .aboutMeImg img {
   width: 170px;
@@ -445,6 +447,8 @@ div.skillsColumn:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
     padding-bottom: 40px;
   }
   .leftSide {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 40%;
     margin: 0 50px 30px 0;
     max-width: 500px;
