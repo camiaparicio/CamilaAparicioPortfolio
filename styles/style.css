@@ -332,8 +332,8 @@ html {
   }
 }
 .aboutMeText h1 {
-  font-size: 50px;
-  margin: 10px 0;
+  font-size: 40px;
+  margin: 10px 0 15px 0;
 }
 .aboutMeText h2 {
   text-transform: uppercase;
