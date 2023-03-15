@@ -239,10 +239,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 20px 0;
+  padding: 25px 0;
   text-transform: uppercase;
 }
 .primary-navigation a {
@@ -251,8 +248,14 @@ html {
   margin-left: 30px;
   font-size: 13px;
 }
+.primary-navigation aa:first-child {
+  margin-left: 0px;
+}
 .primary-navigation a:hover {
   border-bottom: 2px solid #333;
+}
+.primary-navigation li:first-child a {
+  margin-left: 0px;
 }
 
 .mobile-nav-toggle {
@@ -517,13 +520,14 @@ body {
 }
 
 h1 {
-  font-family: "Lora", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
+  letter-spacing: -2px;
 }
 
 h2 {
-  font-family: "Lora", serif;
-  letter-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1.5px;
   font-size: 20px;
 }
 
